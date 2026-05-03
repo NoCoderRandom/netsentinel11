@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+  <Identity Name="NetSentinel11" Publisher="CN=NetSentinel11 Placeholder" Version="0.1.0.0" />
+  <Properties>
+    <DisplayName>NetSentinel11</DisplayName>
+    <PublisherDisplayName>NetSentinel Open Source</PublisherDisplayName>
+    <Description>Local-first Windows 11 network visibility and safety tool.</Description>
+  </Properties>
+</Package>

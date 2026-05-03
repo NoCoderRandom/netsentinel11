@@ -1,0 +1,25 @@
+# NetSentinel11 default English language keys
+
+app.title=NetSentinel11
+nav.dashboard=Dashboard
+nav.scan=Scan
+nav.devices=Devices
+nav.network_map=Network map
+nav.security=Security
+nav.timeline=Timeline
+nav.bandwidth=Bandwidth
+nav.reports=Reports
+nav.settings=Settings
+action.scan.start=Start scan
+action.scan.stop=Stop scan
+action.report.export=Export report
+status.scan.idle=Ready to scan
+status.scan.running=Scanning authorized local network
+status.low_resource=Low-resource mode enabled
+accessibility.scan_button=Start a safe local network scan
+accessibility.device_card=Network device card
+accessibility.security_warning=Security warning
+accessibility.scan_progress=Scan progress
+severity.info=Info
+severity.warning=Warning
+severity.critical=Critical

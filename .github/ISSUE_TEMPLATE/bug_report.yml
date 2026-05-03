@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible NetSentinel11 problem.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve NetSentinel11. Please do not include public IPs, passwords, or private router exports.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps or commands.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version/build
+      placeholder: "0.1.0 portable Windows x64"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Safe logs or screenshots
+      description: Remove names, public IPs, and secrets before attaching.

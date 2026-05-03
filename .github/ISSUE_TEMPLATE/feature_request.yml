@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest a safe local-network feature.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How should NetSentinel11 handle it safely?
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety expectations
+      options:
+        - label: This feature can be implemented without exploits, brute force, spoofing, deauth, or public-IP scanning.
+          required: true

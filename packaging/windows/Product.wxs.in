@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="NetSentinel11" Manufacturer="NetSentinel Open Source" Version="0.1.0" UpgradeCode="PUT-GUID-HERE">
+    <SummaryInformation Description="NetSentinel11 local network visibility tool" />
+    <StandardDirectory Id="ProgramFilesFolder">
+      <Directory Id="INSTALLFOLDER" Name="NetSentinel11">
+        <Component Id="MainExecutable" Guid="PUT-GUID-HERE">
+          <File Source="$(var.BuildOutput)\netsentinel11.exe" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+    <!-- Optional service, tray startup, firewall, and Npcap checks require explicit user consent in future release workflows. -->
+  </Package>
+</Wix>

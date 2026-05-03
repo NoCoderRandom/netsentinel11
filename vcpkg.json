@@ -1,0 +1,15 @@
+{
+  "name": "netsentinel11",
+  "version-string": "0.1.0",
+  "description": "NetSentinel11 staged scaffold (Windows-first)",
+  "homepage": "https://example.com/netsentinel11",
+  "license": "MIT",
+  "supports": "windows",
+  "builtin-baseline": "d68a18f57975d5fc80fc33a24c176bfc0801b344",
+  "dependencies": [
+    "gtest",
+    "nlohmann-json",
+    "spdlog",
+    "sqlite3"
+  ]
+}

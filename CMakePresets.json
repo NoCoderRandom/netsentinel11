@@ -1,0 +1,81 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 24,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "windows-msvc",
+      "displayName": "Windows 11 MSVC Release",
+      "description": "Default Windows 11 build with optional dependencies kept discoverable when installed.",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "NETSENTINEL_ENABLE_SQLITE": "ON",
+        "NETSENTINEL_ENABLE_REST": "ON",
+        "NETSENTINEL_ENABLE_SPDLOG": "OFF",
+        "NETSENTINEL_ENABLE_JSON": "OFF",
+        "NETSENTINEL_ENABLE_TEST_DEPENDENCIES": "ON",
+        "BUILD_TESTING": "ON"
+      },
+      "architecture": {
+        "value": "x64",
+        "strategy": "set"
+      },
+      "vendor": {
+        "microsoft.com/VisualStudioSettings/CMake/1.0": {
+          "intelliSenseMode": "windows-msvc-x64"
+        }
+      }
+    },
+    {
+      "name": "windows-msvc-vcpkg",
+      "displayName": "Windows 11 MSVC + vcpkg manifest",
+      "description": "Use manifest-mode vcpkg when VCPKG_ROOT is configured.",
+      "inherits": "windows-msvc",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "NETSENTINEL_ENABLE_SPDLOG": "ON",
+        "NETSENTINEL_ENABLE_JSON": "ON"
+      }
+    },
+    {
+      "name": "windows-msvc-debug",
+      "displayName": "Windows 11 MSVC Debug",
+      "description": "Debug configuration for development builds.",
+      "inherits": "windows-msvc",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "build-msvc",
+      "displayName": "Build MSVC",
+      "configurePreset": "windows-msvc"
+    },
+    {
+      "name": "build-msvc-vcpkg",
+      "displayName": "Build MSVC with vcpkg",
+      "configurePreset": "windows-msvc-vcpkg"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "test-msvc-release",
+      "displayName": "Test release build",
+      "configurePreset": "windows-msvc",
+      "configuration": "Release"
+    },
+    {
+      "name": "test-msvc-release-vcpkg",
+      "displayName": "Test release build with vcpkg",
+      "configurePreset": "windows-msvc-vcpkg",
+      "configuration": "Release"
+    }
+  ]
+}

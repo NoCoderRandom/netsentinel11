@@ -1,0 +1,88 @@
+# Build output
+/build/
+/build-*/
+/out/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake-build-*/
+/vcpkg_installed/
+/vcpkg_triplets/
+CTestTestfile.cmake
+DartConfiguration.tcl
+/Testing/
+
+# Release artifacts generated locally
+/dist/
+/logs/
+/reports/
+/data/
+*.log
+*.tmp
+*.bak
+*.zip
+*.msi
+*.msix
+*.appx
+*.exe
+*.dll
+*.pdb
+
+# Local storage and generated scan data
+*.db
+*.sqlite
+*.sqlite3
+netsentinel11_storage.db
+
+# Local dependency/tool logs
+aqtinstall.log
+
+# Private roadmap prompts and local working notes
+/prompts/
+/[0-9][0-9]_*.md
+/PROMPT_INDEX.md
+/COPY_PASTE_WORKFLOW.md
+/README_FIRST_HUMAN.md
+/PROJECT_PROGRESS.md
+/REAL_LAN_TEST_REPORT.md
+/CHECKPOINT_CURRENT.md
+/FINAL_COMPLETION_CHECKLIST.md
+/GUI_FULL_VALIDATION_REPORT.md
+/GUI_FEATURE_COVERAGE_MATRIX.md
+/GUI_MILESTONE_PLAN.md
+/FINAL_ACCEPTANCE_AUDIT.md
+/FEATURE_MATRIX.md
+/*_DESIGN_NOTE.md
+
+# Tests are kept out of the public release branch unless explicitly published.
+/tests/
+
+# Local AI coding-assistant and agent files
+/.codex/
+/.agents/
+/.cursor/
+/.claude/
+/.windsurf/
+/.aider*
+/.cursorrules
+/.windsurfrules
+/AGENTS.md
+/CLAUDE.md
+*.chat.md
+*.prompt.md
+
+# IDE/editor state
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+
+# Local publish safety reports
+/docs/GITHUB_PUBLISH_SAFETY_CHECK.md
+
