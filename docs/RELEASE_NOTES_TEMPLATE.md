@@ -4,8 +4,8 @@ Windows 11 local-first network scanner and monitoring app with a Qt 6 C++ GUI.
 
 ## Download
 
-- Portable ZIP: `NetSentinel11-portable-release-<timestamp>.zip`
-- Installer-style ZIP: `NetSentinel11-installer-release-<timestamp>.zip`
+- Portable ZIP: `NetSentinel11-v0.1.0-portable-windows-x64.zip`
+- Installer-style ZIP: `NetSentinel11-v0.1.0-installer-windows-x64.zip`
 
 ## What is included
 
@@ -14,6 +14,12 @@ Windows 11 local-first network scanner and monitoring app with a Qt 6 C++ GUI.
 - Safe local LAN discovery and service-identification actions.
 - Portable release for unzip-and-run testing.
 - Installer-style release with setup/uninstall scripts.
+
+## How to start the portable app
+
+1. Download `NetSentinel11-v0.1.0-portable-windows-x64.zip`.
+2. Unzip it.
+3. Double-click `NetSentinel11.exe`.
 
 ## Safety
 

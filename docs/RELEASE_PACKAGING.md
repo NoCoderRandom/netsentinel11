@@ -13,14 +13,14 @@ powershell -ExecutionPolicy Bypass -File scripts\package_portable_release.ps1
 
 Expected output:
 
-- `dist\NetSentinel11-portable-release-<timestamp>\`
-- `dist\NetSentinel11-portable-release-<timestamp>.zip`
+- `dist\NetSentinel11-v0.1.0-portable-windows-x64-clean\`
+- `dist\NetSentinel11-v0.1.0-portable-windows-x64.zip`
 - SHA256 checksum printed by the script
 
 Users unzip the package and run:
 
 ```powershell
-app\netsentinel11_gui.exe
+NetSentinel11.exe
 ```
 
 ## 2. Installer-style release
@@ -33,8 +33,8 @@ powershell -ExecutionPolicy Bypass -File scripts\package_installer_release.ps1
 
 Expected output:
 
-- `dist\NetSentinel11-installer-release-<timestamp>\`
-- `dist\NetSentinel11-installer-release-<timestamp>.zip`
+- `dist\NetSentinel11-v0.1.0-installer-windows-x64-clean\`
+- `dist\NetSentinel11-v0.1.0-installer-windows-x64.zip`
 
 ## 3. MSI/MSIX path
 

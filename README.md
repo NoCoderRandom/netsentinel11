@@ -60,7 +60,7 @@ Use it only on networks you own or have explicit permission to test.
 
 NetSentinel11 is intended to ship in three friendly forms:
 
-1. **Portable Windows folder/ZIP**: unzip and run `netsentinel11_gui.exe`.
+1. **Portable Windows folder/ZIP**: unzip and double-click `NetSentinel11.exe`.
 2. **Installer-style Windows package**: setup folder with install/uninstall scripts now; MSI/MSIX path prepared for signed releases.
 3. **Source build from GitHub**: clone, configure with CMake, and compile with MSVC 2022.
 
