@@ -5,7 +5,7 @@
 It is designed for home networks, labs, schools, community projects, and low-resource environments that need free and open-source local network visibility without cloud lock-in.
 
 <p align="center">
-  <img src="docs/assets/screenshots/dashboard-light.png" alt="NetSentinel11 dashboard" width="900">
+  <img src="docs/assets/screenshots/dashboard-reset.png" alt="NetSentinel11 dashboard showing a real LAN scan" width="900">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@ It is designed for home networks, labs, schools, community projects, and low-res
 ## Highlights
 
 - Modern Windows 11-style Qt 6 desktop GUI.
-- Dashboard, device cards, device list, topology-style map, scan progress, reports, settings, and light/dark themes.
+- Dashboard, device inventory, safe port scanner, security findings, reports, settings, and dark Windows-style workflow.
 - Safe LAN discovery using local-only techniques such as ARP, ICMP, TCP liveness hints, hostname lookup, mDNS, SSDP, NetBIOS, and read-only diagnostics where available.
 - Device inventory, identity merge, vendor/OUI hints, event timeline, service hints, security warnings, and report export.
 - Bandwidth and top-talkers UI foundations with local-machine and router/source abstractions.
@@ -44,17 +44,15 @@ Use it only on networks you own or have explicit permission to test.
 
 ## Screenshots
 
-| Dashboard | Scan progress | Devices |
-| --- | --- | --- |
-| ![Dashboard](docs/assets/screenshots/dashboard-light.png) | ![Scan progress](docs/assets/screenshots/scan-light.png) | ![Devices](docs/assets/screenshots/devices-light.png) |
+These screenshots are from the rebuilt Qt GUI and show real authorized-LAN scanner flows. Local private IP addresses may appear; no public Internet scan data is used.
 
-| Network map | Security | Reports |
-| --- | --- | --- |
-| ![Map](docs/assets/screenshots/map-light.png) | ![Security](docs/assets/screenshots/security-dark.png) | ![Reports](docs/assets/screenshots/reports-light.png) |
+| Dashboard | Devices |
+| --- | --- |
+| ![Dashboard](docs/assets/screenshots/dashboard-reset.png) | ![Devices](docs/assets/screenshots/devices-reset.png) |
 
-| Timeline | Bandwidth | Wi-Fi environment |
-| --- | --- | --- |
-| ![Timeline](docs/assets/screenshots/timeline-light.png) | ![Bandwidth](docs/assets/screenshots/bandwidth-light.png) | ![Wi-Fi](docs/assets/screenshots/wifi-light.png) |
+| Port scanner | Security findings |
+| --- | --- |
+| ![Port scanner](docs/assets/screenshots/portscanner-reset.png) | ![Security findings](docs/assets/screenshots/security-reset.png) |
 
 ## Release options
 
